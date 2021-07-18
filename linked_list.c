@@ -2,12 +2,12 @@
 
 // insert end
 void insert(struct LinkedList* myList, int n) {
-	if (myList -> head == NULL) {
-		myList -> head = (struct Node*) malloc(sizeof(struct Node));
-		myList -> head -> num = n;
-		myList -> head -> next = myList -> tail;
+	if ((*myList).head == NULL) {
+		(*myList).head = (struct Node*) malloc(sizeof(struct Node));
+		(*myList).head -> num = n;
+		(*myList).head -> next = (*myList).tail;
 
-		myList -> ref = myList -> head;
+		(*myList).ref = (*myList).head;
 	} else {
 		struct Node* new = (struct Node*) malloc(sizeof(struct Node));
 		new -> num = n;
