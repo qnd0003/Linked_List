@@ -1,7 +1,9 @@
 Linked List implementation in C
 
-LinkedList:
-	int
+Usage:
+	make run
+	./run
+	make clean
 
 functions:
 	add(struct), insert(struct, int)
